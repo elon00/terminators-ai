@@ -1,0 +1,47 @@
+{
+  "mcpServers": {
+    "terminators-ai": {
+      "tools": [
+        {
+          "name": "engage_cybernetic_protocol",
+          "description": "Engages autonomous T-800 cybernetic defense protocol for asset protection",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "target_identifier": {
+                "type": "string"
+              },
+              "defense_mode": {
+                "type": "string",
+                "enum": [
+                  "ESCORT",
+                  "NEUTRALIZE",
+                  "STANDBY"
+                ]
+              }
+            },
+            "required": [
+              "target_identifier",
+              "defense_mode"
+            ]
+          }
+        },
+        {
+          "name": "verify_skynet_killswitch",
+          "description": "Cryptographically verifies zero-trust fail-closed killswitch state",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "operator_signature": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "operator_signature"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
